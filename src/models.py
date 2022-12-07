@@ -53,6 +53,10 @@ class Character(Base):
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
+    height = Column(Integer, nullable=False)
+    mass = Column(Integer,  nullable=False)
+    gender = Column(String(80), nullable=False)
+    
 
 
     def to_dict(self):
